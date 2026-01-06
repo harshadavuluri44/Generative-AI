@@ -10,4 +10,4 @@ insert into p5pcp_system.table_permissions.required_permissions values
 ('i5pros_prospect','client_works','','i5pros','us','prospect_aws_db_i5pros_client','','','','yes','','','',current_date(),'davharsh@publicisgroupe.net',null,null),
 ('i5pros_prospect','client_works','','i5pros','us','i5pros_pcp_client_service_group','USE SCHEMA,SELECT','','','no','','','',current_date(),'davharsh@publicisgroupe.net',null,null),
 ('p6mars_prospect','client_works','','p6mars','us','prospect_aws_db_p6mars_client','','','','yes','','','',current_date(),'davharsh@publicisgroupe.net',null,null),
-('p6mars_prospect','client_works','','p6mars','us','p6mars_pcp_client_service_group','USE SCHEMA,SELECT','','','no','','','',current_date(),'davharsh@publicisgroupe.net',null,null),
+('p6mars_prospect','client_works','','p6mars','us','p6mars_pcp_client_service_group','USE SCHEMA,SELECT','','','no','','','',current_date(),'davharsh@publicisgroupe.net',null,null);

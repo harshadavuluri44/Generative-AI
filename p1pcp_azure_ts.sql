@@ -10,4 +10,4 @@ insert into p1pcp_system.table_permissions.required_permissions values
 ('i1praz_prospect','client_works','','i1praz','us','prospect_db_i1praz_client','','','','yes','','','',current_date(),'davharsh@publicisgroupe.net',null,null),
 ('i1praz_prospect','client_works','','i1praz','us','i1praz_client_service_group','USE SCHEMA,SELECT','','','no','','','',current_date(),'davharsh@publicisgroupe.net',null,null),
 ('p1clnt_prospect','client_works','','p1clnt','us','prospect_db_p1clnt_client','','','','yes','','','',current_date(),'davharsh@publicisgroupe.net',null,null),
-('p1clnt_prospect','client_works','','p1clnt','us','p1clnt_client_service_group','USE SCHEMA,SELECT','','','no','','','',current_date(),'davharsh@publicisgroupe.net',null,null),
+('p1clnt_prospect','client_works','','p1clnt','us','p1clnt_client_service_group','USE SCHEMA,SELECT','','','no','','','',current_date(),'davharsh@publicisgroupe.net',null,null)

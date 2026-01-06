@@ -1,4 +1,4 @@
-INSERT INTO p5pcp_system.system_configuration.table_subscriptions VALUES
+INSERT INTO p1pcp_system.system_configuration.table_subscriptions VALUES
 ('i2int_prospect','client_works', '', 'i2int', '', '', '', '', '','abfss://databricks@i2int.dfs.core.windows.net/client_works','',current_date(),'davharsh@publicisgroupe.net',NULL,'',NULL),
 ('i1int_prospect','client_works', '', 'i1int', '', '', '', '', '','abfss://databricks@i1int.dfs.core.windows.net/client_works','',current_date(),'davharsh@publicisgroupe.net',NULL,'',NULL),
 ('p2walm_prospect','client_works', '', 'p2walm', '', '', '', '', '','abfss://databricks@p2walm.dfs.core.windows.net/client_works','',current_date(),'davharsh@publicisgroupe.net',NULL,'',NULL),
