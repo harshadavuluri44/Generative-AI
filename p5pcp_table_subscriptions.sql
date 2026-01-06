@@ -1,0 +1,7 @@
+INSERT INTO p5pcp_system.system_configuration.table_subscriptions VALUES
+('p5pcat_prospect','client_works', '', 'p5pcat', '', '', '', '', '','s3://int-prod-uc-us-east-1-databricks-iq/client_works','',current_date(),'davharsh@publicisgroupe.net',NULL,'',NULL),
+('p5demo_prospect','client_works', '', 'p5demo', '', '', '', '', '','s3://demo-euprod-uc-eu-west-1-databricks-iq/client_works','',current_date(),'davharsh@publicisgroupe.net',NULL,'',NULL),
+('i5int_prospect','client_works', '', 'i5int', '', '', '', '', '','s3://int-euprod-uc-eu-west-1-databricks-iq/client_works','',current_date(),'davharsh@publicisgroupe.net',NULL,'',NULL),
+('p5skuk_prospect','client_works', '', 'p5skuk', '', '', '', '', '','s3://skuk-euprod-uc-eu-west-1-databricks-iq/client_works','',current_date(),'davharsh@publicisgroupe.net',NULL,'',NULL),
+('i5pros_prospect','client_works', '', 'i5pros', '', '', '', '', '','s3://i5pros-euint-uc-eu-west-1-databricks-iq/client_works','',current_date(),'davharsh@publicisgroupe.net',NULL,'',NULL),
+('p6mars_prospect','client_works', '', 'p6mars', '', '', '', '', '','s3://mars-euprod-uc-eu-west-1-databricks-iq/client_works','',current_date(),'davharsh@publicisgroupe.net',NULL,'',NULL),
