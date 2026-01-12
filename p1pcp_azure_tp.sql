@@ -1,7 +1,0 @@
-INSERT INTO p1pcp_system.system_configuration.table_subscriptions VALUES
-('i2int_prospect','client_works', '', 'i2int', '', '', '', '', '','abfss://databricks@i2int.dfs.core.windows.net/client_works','',current_date(),'davharsh@publicisgroupe.net',NULL,'',NULL),
-('i1int_prospect','client_works', '', 'i1int', '', '', '', '', '','abfss://databricks@i1int.dfs.core.windows.net/client_works','',current_date(),'davharsh@publicisgroupe.net',NULL,'',NULL),
-('p2walm_prospect','client_works', '', 'p2walm', '', '', '', '', '','abfss://databricks@p2walm.dfs.core.windows.net/client_works','',current_date(),'davharsh@publicisgroupe.net',NULL,'',NULL),
-('s2pros_prospect','client_works', '', 's2pros', '', '', '', '', '','abfss://databricks@s2pros.dfs.core.windows.net/client_works','',current_date(),'davharsh@publicisgroupe.net',NULL,'',NULL),
-('i1praz_prospect','client_works', '', 'i1praz', '', '', '', '', '','abfss://databricks@i1praz.dfs.core.windows.net/client_works','',current_date(),'davharsh@publicisgroupe.net',NULL,'',NULL),
-('p1clnt_prospect','client_works', '', 'p1clnt', '', '', '', '', '','abfss://databricks@p1clnt.dfs.core.windows.net/client_works','',current_date(),'davharsh@publicisgroupe.net',NULL,'',NULL);
