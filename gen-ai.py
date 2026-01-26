@@ -6,10 +6,10 @@ Generative AI
 Data objects -> Deep Neural Networks -> Taks
 
 
-Data objects like Data, text, audio etc are inputs which are passed to DNN to understand the patterns,
-correlations and charactersitics to perform tasks like create image, convert image to text etc.
+Data objects like Data, text, audio etc are inputs which are passed to DNN to understand the patterns, correlations and charactersitics
+to perform tasks like create image, convert image to text etc.
 
-------------
+------------------------------------------------------------------------------------------------------------------------------------
 
 LLM models are suggested to run on GPU's(Graphic Processing Units) instead of CPU's 
 
@@ -42,7 +42,7 @@ Running model locally
 
 But under the hood both do the same
 
-----------
+------------------------------------------------------------------------------------------------------------------------------------
 
 AWS EC2 provides both CPU, GPU based instances both
 Example :- g5.xlarge is GPU EC2 instance
