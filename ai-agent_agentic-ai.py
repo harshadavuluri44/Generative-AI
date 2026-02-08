@@ -22,6 +22,25 @@ A TOOL CALL happens when LLM realizes it cannot answer a user's query on its own
 
 Here AI AGENT is the one which completes TOOL CALL (i.e sending prompt from LLM to TAVILY and sending back respective answer.)
 
+---------------------------------------------------------
+
+Example of an AI Agent  
+Suppose you want to book a flight next week from City A to City B. You simply provide the prompt: “Book me a flight from A to B next week.”
+
+User Prompt
+
+LLM Layer: Intent Parsing
+
+RAG Layer: Retrieve flight data from Ixigo
+
+Agent Layer: use tools/APIs to book flights
+
+confirmation
+
+
+RAG is like a research assistant: it looks up the latest flight schedules for you.
+AI Agent is like a personal assistant: it takes those schedules, asks you which one you want, and then actually books the ticket.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
 AGENTIC AI = AI Systems (single or multiple agents) that autonomously plan, reason, use tools, and collaborate to achieve goals.
