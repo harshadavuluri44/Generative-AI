@@ -1,6 +1,6 @@
 '''
 
-TIP of the Day: Retrieval Qualitty Matters More Than Model Size
+TIP of the Day: Retrieval Quality Matters More Than Model Size
 
 * Many poeple focus on the LLM (GPT, Gemini, etc.), but in RAG the retrieval step is the real backbone.
 

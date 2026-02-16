@@ -3,7 +3,7 @@
 Generative AI
 
 
-Data objects -> Deep Neural Networks -> Taks
+Data objects -> Deep Neural Networks -> Tasks
 
 
 Data objects like Data, text, audio etc are inputs which are passed to DNN to understand the patterns, correlations and charactersitics

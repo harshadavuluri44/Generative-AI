@@ -1,6 +1,6 @@
 '''
 
-An LLM is a Deep Learning model trained on massive amounts of text to understand, generate, and reason with human language.
+A LLM is a Deep Learning model trained on massive amounts of text to understand, generate, and reason with human language.
 
 
 It can answer questions, summarize text, write code, and more based on patterns learned during training.
@@ -9,7 +9,7 @@ It can answer questions, summarize text, write code, and more based on patterns 
 
 LIMITATION :- Knowledge is fixed to training data and it may hallucinate or give outdated answers.
 
---------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
 
 1B = 1000M = 1000*10L = 10,000L = 100 Crores
 
@@ -31,24 +31,24 @@ In the backend this Model contains 2 files in Hypothetical directory
 2. .c file (~500 line of C code) It can be any language
     The brain Mechanics to implement Neural Networks architecture, take input, work on parameters/weights, produce output.
 
---------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
 
 Training  - Preparing the weights and teaching/learning to Deep Learning Models behind LLM
 Inference - Using already learned weights through LLMs to predict text, etc.
 
---------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
 
 Parameters - How do we obtain them?
 
     passing chunks of data from iternet -> 6000GPUs for 12 days + Neural Network (a Deep Learning model 
     called a Transformer) -> parameters.bin
 
-----------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
 
 When a prompt is given to an LLM, behind the scenes a NEURAL NETWORK (a Deep Learning model called a Transformer) runs inference
 using the learned parameters(stored in .bin/ .safetensors) and generates output.
 
------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
 
 
                                         NEURAL NETWORK
@@ -65,7 +65,7 @@ using the learned parameters(stored in .bin/ .safetensors) and generates output.
    
 The whole above is like Pretraining
 
-------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
 
 Stage 2: Finetuning
 
@@ -79,7 +79,7 @@ Obtain Assistant Model.
 Run lot of evaluations.
 Monitor, collect misbehaviors, repeat the step 1.
 
----------------
+-------------------------------------------------------------------------------------------------------------------------------------
 
 Stage 3: RHF - Reinforcement Learning from Human Feedback (optional)
 
