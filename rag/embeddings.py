@@ -62,6 +62,16 @@ VECTOR DB Storage
    QUERY VECTOR <-> STORED VECTORS.
 
 
+Chroma DB is an open-source vector database designed for AI applications like RAG.
+
+------------------------------------------------------------------------------------------------------------
+
+
+Sentence-Transformers
+
+    A python library built on top of Hugging Face Transformers that provides pretrained models for generating dense embeddings (vector representations) of text.
+
+
 
 
 '''
