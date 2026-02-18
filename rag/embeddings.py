@@ -69,7 +69,12 @@ Chroma DB is an open-source vector database designed for AI applications like RA
 
 Sentence-Transformers
 
-    A python library built on top of Hugging Face Transformers that provides pretrained models for generating dense embeddings (vector representations) of text.
+    A python library built on top of Hugging Face Transformers that provides pretrained models for generating dense embeddings of text.
+
+        dense embeddings - vectors where most values are non-zero [1.2, -4, 3.6, 8.9, 1.7, -0.8, 0, 2.9, 1.7]
+
+        sparse embeddings - vectors with many zeros - only few non zero values. [1, 0, -2.3, 0, 0, 1.9, 0, 0,]
+
 
 
 

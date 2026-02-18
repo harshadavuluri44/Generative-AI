@@ -3,7 +3,7 @@
 Document object/Data structure in LangChain.
 
 
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 doc = Document(
         page_content="This is my custom text that I want to process.",
