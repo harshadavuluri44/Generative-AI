@@ -42,14 +42,18 @@ USE ai_similarity function in databricks for the above usecase.
 
 NOTE - cosine_similarity is not available in databricks sql.
 
+cosine_similarity is also available in python
+
+from sklearn.metrics.pairwise import cosine_similarity
+
 
 ------------------------------------------------------------------------------------------------------------
 
-FAISS-CPU
+FAISS-CPU/GPU
 
-    FAISS (Facebook AI Similarity Search) is a library for fast similarity search in large collection of vectors.
+    FAISS (Facebook AI Similarity Search) is a vector search library for fast similarity search in large collection of vectors.
 
-    FAISS runs on CPU, no GPU's required.
+    FAISS runs on CPU for small datasets and GPU for large datasets.
 
 
 
