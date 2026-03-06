@@ -13,8 +13,6 @@ the vector passed in ORDER BY class inside cosine_similarity is the query embedd
 
 embedding is a column in vector_table.
 
-
-
 ------------------------------------------------------------------------------------------------------------------------------------
 
 

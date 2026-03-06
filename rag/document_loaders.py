@@ -24,7 +24,6 @@ TextLoader, PyPdfLoader, DirectoryLoader classes are available in langchain.docu
     TextLoader class is used to load plain text files into Document objects.
     PyPdfLoader class is used to load PDF files into Document objects.
 
-
     DirectoryLoader class is used to load all files in a directory into Document objects.
 ----------------------------------------------------------------------------------------------------------------------
 

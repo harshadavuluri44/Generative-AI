@@ -6,12 +6,15 @@ VectorSearchClient in Databricks.
 from databricks.vector_search.client import VectorSearchClient
 
 
-VECTOR SEARCH ENDPOINT
 
-    It is used to create a vector search endpoint to perform similarity search
+VectorSearchClient class helps to
+
+            create vector search endpoint for similarity search
+
+            create vector search index table from source table.
 
 
-------------------------
+------------------------------------------------------------------------------------------------------------------------------------
 
 
 VECTOR SEARCH INDEX
@@ -24,17 +27,20 @@ VECTOR SEARCH INDEX
 
 vsc = VectorSearchClient()
 
-index = vsc.create_delta_sync_index(
+index = vsc.create_delta_sync_index_and_wait(
                 endpoint_name,
                 index_name,
                 source_table_name,
                 pipeline_type,
                 primary_key,
                 embedding_dimension,
-                embedding_vector_column_name)
+                embedding_vector_column_name,
+                embedding_model_endpoint_name,
+                verbose=True)
 
 
-create_delta_sync_index() reads delta table that contains resume chunks and embeddings, builds an optimized search index
+create_delta_sync_index_and_wait() reads delta table that contains resume chunks and embeddings, builds an optimized search index
+and waits for the index to be ready.
 
 
 '''

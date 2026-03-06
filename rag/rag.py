@@ -11,12 +11,10 @@ Before generating an answer, it retrieves relevant information and feeds it to t
 and grounded.
 
 
-
 In Short:
 
     LLM = Brain (language understanding & generation)
     RAG = Brain + Open-book (retrieves real data before answering)
-
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -29,9 +27,6 @@ Fine-tuning is not the better option when the specific data get's updated freque
 PERPLEXITY is completely developed based on RAG applications.
 
 -------------------------------------------------------------------------------------------------------------------------------------
-
-
-
 
 Data (pdf, html, etc) ->    parsing (chunks)   ->   Embeddings (text to vectors)    -> VECTOR DB
 
@@ -51,14 +46,11 @@ Ex: You are a helpful assistant. Use the following context to answer the user's 
 
     Question: What are the key points in the HR policy document?
 
-
-
 -------------------------------------------------------------------------------------------------------------------------------------
 
-Example in Databricks
+Example of RAG pipeline in Databricks:
 
-
-User Query to -> RAG pipeline -> vector DB -> prompt -> triggers LLM (serving endpoint) -> response.
+        User Query to -> RAG pipeline -> vector DB -> prompt -> triggers LLM (serving endpoint) -> response.
 
 -------------------------------------------------------------------------------------------------------------------------------------
 

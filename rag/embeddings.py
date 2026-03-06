@@ -1,9 +1,12 @@
 '''
 
-Models like Google Gemini Embeddings,
+Models like 
+            databricks-bge-large-en,
+            Google Gemini Embeddings,
             OpenAI Embeddings,
             HuggingFace Embeddings 
-                are specifically designed to convert chunks into numerical vector representations.
+                
+                    are specifically designed to convert chunks into numerical vector representations.
 
 Input: A piece of text(sentence, paragraph, or document chunk).
 Output: A high-dimensional vector (e.g., 1x768 or 1x1536 dimensions depending on the model).
