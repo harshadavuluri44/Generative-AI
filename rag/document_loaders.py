@@ -14,8 +14,7 @@ doc = Document(
         }
     )
 
-NOTE - In the Document() class we need to pass page content directly, so prefer TextLoader for .txt files to create 
-       Document objects.
+NOTE - In the Document() class we need to pass page content directly, so prefer TextLoader for .txt files to create Document objects.
 
 
 ----------------------------------------------------------------------------------------------------------------------
