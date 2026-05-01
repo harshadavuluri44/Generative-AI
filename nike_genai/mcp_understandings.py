@@ -91,6 +91,5 @@ mcp.run(transport="sse")
     Starts the MCP server using SSE (Server-Sent Events) as the transport protocol.
     SSE is an HTTP-based protocol that keeps a long-lived connection open,
     so the server stays alive and handles multiple tool calls without restarting.
-    Alternative transport: "stdio" (communicates over stdin/stdout instead of HTTP).
 
 '''
