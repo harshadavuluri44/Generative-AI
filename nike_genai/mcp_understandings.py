@@ -1,11 +1,11 @@
 '''
 
-=== WHAT IS MCP? ===
+----------------------  WHAT IS MCP? -----------------------------
 
 MCP (Model Context Protocol) lets AI assistants call external tools (Python functions) running on your local machine.
 
 
-=== LOCALHOST ===
+------------------------------ LOCALHOST --------------------------------
 
 Cursor Agent calls MCP Server on localhost (the same machine).
 localhost uses the same RAM, CPU — similar to running code in your terminal.
@@ -16,7 +16,7 @@ host  ->  127.0.0.1  ->  which machine should the code run on? (localhost = same
 port  ->  8000       ->  which door on that machine?
 
 
-=== MCP ARCHITECTURE ===
+------------------------------ MCP ARCHITECTURE -----------------------------
 
 MCP HOST    ->  The app where user interacts with AI assistant.
                 Examples: Cursor, VS Code, Claude Desktop.
@@ -29,20 +29,20 @@ MCP SERVER  ->  A Python program that registers and executes tools (custom Pytho
                 Note: Code runs on localhost using the laptop's own CPU and RAM.
 
 
-=== MCP vs RAG ===
+------------------------------ MCP vs RAG --------------------------------
 
 RAG  ->  Provides static knowledge to LLM (whatever we stored in vector DB beforehand).
 MCP  ->  Provides dynamic knowledge to LLM (real-time data fetched when the question is asked).
 
 
-=== KEY LIBRARIES ===
+------------------------------ KEY LIBRARIES --------------------------------
 
 FastMCP                   ->  Framework to build MCP servers in Python.
 langchain-mcp-adapters   ->  Library to connect LangChain AI agents to MCP servers.
 python-dotenv            ->  Library to load .env file variables into os.environ.
 
 
-=== HOW MCP WORKS (FLOW) ===
+------------------------------ HOW MCP WORKS (FLOW) --------------------------------
 
 1. User provides input (question/prompt) to MCP Host (e.g., Cursor).
 2. MCP Client (inside the host) queries connected MCP Servers to discover all available tools and their descriptions.
@@ -55,7 +55,7 @@ python-dotenv            ->  Library to load .env file variables into os.environ
 8. Output is displayed to the user in the MCP Host.
 
 
-=== SERVER CODE EXPLAINED ===
+------------------------------ SERVER CODE EXPLAINED --------------------------------
 
 from mcp.server.fastmcp import FastMCP
 
@@ -66,7 +66,7 @@ mcp = FastMCP("test-mcp-server", host="127.0.0.1", port=8000)
     port=8000           ->  Listen on port 8000.
 
 
---- Registering tools ---
+------------------------------ Registering tools --------------------------------
 
 mcp.tool()(confluence_search)
 
@@ -84,12 +84,22 @@ mcp.tool()(confluence_search)
     The server reads the function's name, type hints, and docstring to auto-generate the tool schema.
 
 
---- Starting the server ---
+------------------------------ Starting the server --------------------------------
 
 mcp.run(transport="sse")
 
     Starts the MCP server using SSE (Server-Sent Events) as the transport protocol.
     SSE is an HTTP-based protocol that keeps a long-lived connection open,
     so the server stays alive and handles multiple tool calls without restarting.
+
+
+
+
+------------------------------------------------------------------------------------------------
+
+
+NOTE
+
+MAKE SURE TO START THE MCP SERVER BEFORE ASKING ANY QUESTIONS TO AI AGENT.
 
 '''
