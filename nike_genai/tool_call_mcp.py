@@ -32,4 +32,16 @@ In short: Cursor asks the server to run a function on its behalf by sending a JS
 the "Remote Procedure Call."
 
 
+
+----------------------------------------------------------------------------
+
+
+
+Tool calling is the higher-level action - the agent (Cursor) deciding " I need to run mcp tool"
+
+tools/call is the specific JSON-RPC method name that carries that request over the wire to your MCP server.
+
+
+
+
 """
