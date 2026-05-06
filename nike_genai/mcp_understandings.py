@@ -21,8 +21,10 @@ port  ->  8000       ->  which door on that machine?
 MCP HOST    ->  The app where user interacts with AI assistant.
                 Examples: Cursor, VS Code, Claude Desktop.
 
-MCP CLIENT  ->  Runtime bridge inside the host that connects user/assistant requests
-                to MCP servers. It uses .mdc config files as its map to know which servers exist.
+MCP CLIENT  ->  A component that maintains a connection to an MCP server and obtains context from an MCP server for the MCP host to use
+
+
+
 
 MCP SERVER  ->  A Python program that registers and executes tools (custom Python functions)
                 that provide data or context to the LLM based on user requests.
