@@ -20,4 +20,26 @@ C series = compute optimized
     More CPU per dollar, less memory per CPU. Better for CPU-heavy workloads: UDF-heavy workloads, long running jobs - fast compute when data fits in memory.
 
 
+--------------------------------------------------------------------------------------------------------------------
+
+
+M, R, C series has graviton enabled instances.
+
+
+Graviton instances are ARM based CPUs, they are power-efficient and can be cheaper for the same performance of usual general instances/ CPUs.
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+Fleet instances
+
+
+    User selects a fleet category (M/R/C) and size (small, medium, large), not one exact AWS EC2 type like m5.xlarge or m6i.xlarge.
+
+
+    Then Databricks/AWS chooses a suitable underlying EC2 instance from a pool of compatible types based on availability and capacity.
+
+fleet instances can be spot or on-demand.
+
+
 '''
