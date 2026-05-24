@@ -1,26 +1,3 @@
-f'''
-
-
-LLMChain: Simplest chain. Takes a prompt template + input, sends it to the LLM, and returns the response.
-
-
-
-SequentialChain: Connects multiple chains in order. The output of one chain becomes the input of the next.
-
-
-
-RouterChain: Routes input to different chains based on conditions.
-
-
-------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-'''
-
-
 # Example: Simple LLMChain
 
     # Image we want to generate a company name for a product.
