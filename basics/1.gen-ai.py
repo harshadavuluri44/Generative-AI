@@ -1,50 +1,53 @@
 '''
 
-Generative AI
+GENERATIVE AI core idea :-  Data Objects -> Deep Neural Networks (DNNs) -> Tasks
 
 
-Data objects -> Deep Neural Networks -> Tasks
+Data objects (text, images, audio, video, etc.) are fed as input to a Deep Neural Network. The DNN learns the underlying patterns, correlations, and characteristics 
+of that data, and then uses what it has learned to perform generative tasks such as creating images, converting images to text, or generating new text.
 
 
-Data objects like Data, text, audio etc are inputs which are passed to DNN to understand the patterns, correlations and charactersitics
-to perform tasks like create image, convert image to text etc.
+LLMs are built on top of DNNs.
 
-------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-LLM models are suggested to run on GPU's(Graphic Processing Units) instead of CPU's 
+LLMs are recommended to run on GPUs (Graphics Processing Units) rather than CPUs.
 
-What really happens?
+What actually happens when you query an LLM?
 
-Your text -> converted to tokens -> converted to numbers (embeddings)
-These numbers go through:
-    Matrix Multiplications,
-    Attention Calculations,
-    Non-linear functions.
+    Input text -> tokenized into tokens -> converted into vectors (embeddings)
 
-All of this math runs on the GPU
+    These vectors then flow through several mathematical operations:
+        - Matrix multiplications (the bulk of the computation)
+        - Attention calculations (which tokens attend to which)
+        - Non-linear activation functions (e.g., GELU, Softmax)
 
-why GPU?
-GPU runs thousands of calculations in parallel
+    All of this heavy math is executed on the GPU.
 
+Why a GPU and not a CPU?
+    - A CPU has a few powerful cores optimized for sequential tasks.
+    - A GPU has thousands of smaller cores optimized to run calculations in parallel.
+    - LLM workloads are essentially massive parallel matrix operations, which makes them a perfect fit for GPU architecture.
 
-Running model via an API vs locally
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Using an API
-    You don't see GPU
-    You don't manage hardware
-    You only send input & get output
+Running a LLM via an API vs running it locally
 
-Running model locally
-    you must
-        load model into VRAM
-        manage GPU memory
-        Handle performance
+    Using an API (e.g., OpenAI, Anthropic, Bedrock):
+        - You don't see or manage the GPU.
+        - You don't manage hardware, drivers, or memory.
+        - You simply send an input (prompt) and receive an output (response).
 
-But under the hood both do the same
+    Running a LLM locally:
+        - You must load the LLM weights into VRAM (GPU memory).
+        - You must manage GPU memory, batching, and quantization.
+        - You are responsible for performance, latency, and scaling.
 
-------------------------------------------------------------------------------------------------------------------------------------
+    Under the hood, both approaches execute the same kind of math — the only real difference is who owns and operates the GPU.
 
-AWS EC2 provides both CPU, GPU based instances both
-Example :- g5.xlarge is GPU EC2 instance
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+AWS EC2 provides both CPU-based and GPU-based instances.
+    Example: g5.xlarge is a GPU-backed EC2 instance (NVIDIA A10G), commonly used for inference and fine-tuning of mid-sized models.
 
 '''
