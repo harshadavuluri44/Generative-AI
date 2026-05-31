@@ -5,8 +5,6 @@
 # MCP
 
 
-
-
 # RAG
 
 1. Document Chunking
