@@ -55,4 +55,8 @@ line 16 with
 llm = ChatDatabricks(endpoint='Harsha-serving-endpoint-1',
                     temperature=0.9)
 
+
+
+NOTE - ChatDatabricks() only allows keyword arguments, not positional arguments. So endpoint key is mandatory.
+
 '''

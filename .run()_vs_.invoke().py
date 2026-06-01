@@ -20,7 +20,7 @@ Use .invoke() when we need structured inputs/outputs, metadata or want to integr
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-
+NOTE - .run() is used in langchain old versions and deprecated now, use .invoke() instead.
 '''
 
 
