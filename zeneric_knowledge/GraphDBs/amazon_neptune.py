@@ -53,10 +53,33 @@ By default, Neptune is not publicly accessible - meaning you cannot hit its HTTP
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-    
+
+What is Neptune Engine? which to be configured while creating Neptune DB instance.
+
+
+    The Amazon Neptune Engine is the fully managed graph database software layer provided by AWS. It is software the executes queries, manages graph data, and enforces
+transactions. we interact with it through Gremlin or SPARQL queries, while AWS handles the underlying infrastructure. Internally, the engine runs on EC2- like compute 
+instances and stores data on SSD-backed storage, but those details are abstracted away - you only see the database endpoint.
 
 
 
+Example value: Neptune 1.4.7.0.R1
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+While creating Neptune DB, it asks for
+
+
+    DB Cluster Name     - Whole Neptune cluster which contains Primary instance and replica instances
+
+    DB Instance Name    - Individual database instance within the cluster.
+
+
+    Example: social-graph-cluster
+
+            social-graph-writer, social-graph-reader1
 
 
 
