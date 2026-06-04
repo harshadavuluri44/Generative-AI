@@ -83,4 +83,34 @@ While creating Neptune DB, it asks for
 
 
 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+QUery neptune Db
+
+Based on the Sparql query
+
+    Internally quads are built (:Subject, :Predicate, :Object, :Graph)
+
+    Subject: The entity being described (e.g., Alice)
+    Predicate: The property or relationship (e.g., knows)
+    Object: The value or target entity (e.g., Bob)
+    Graph: The named graph or context in which the triplet exists (e.g.,: SocialGraph)
+
+
+
+Why quad matters? In Neptune indexing happens based on quads.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Use Property graphs - when focus is on relationships with attributes
+
+
+Use RDF graphs - when focus is on semantic meaning, data integration.
+
+
+
+
 '''
