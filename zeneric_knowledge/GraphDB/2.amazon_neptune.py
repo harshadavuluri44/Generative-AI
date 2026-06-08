@@ -3,11 +3,8 @@
 Amazon Neptune is a fast, reliable, fully managed graph database service that makes it easy to build and run applications that work with highly connected datasets.
 
 
-Neptune supports query languages like Gremlin,
-                                      SPARQL
-                                      W3C's RDF
-                                      Neo4j's openCypher
-
+Neptune supports query languages like 
+                                    Gremlin, SPARQL, W3C's RDF, Neo4j's openCypher
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Neptune database is highly available, with read replicas, point-in-time recovery, continous backup to Amazon S3, and replication across availability zones.
@@ -26,8 +23,6 @@ Neptune database is highly available, with read replicas, point-in-time recovery
     Replication across availability zones in single aws region (stored in Distributed SSD storage system)
         Neptune replicates only graph data across multiple zones but not database is created.
         Db1 in zone 1 can access graph data in zone 2.
-
-
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -57,9 +52,9 @@ By default, Neptune is not publicly accessible - meaning you cannot hit its HTTP
 What is Neptune Engine? which to be configured while creating Neptune DB instance.
 
 
-    The Amazon Neptune Engine is the fully managed graph database software layer provided by AWS. It is software the executes queries, manages graph data, and enforces
-transactions. we interact with it through Gremlin or SPARQL queries, while AWS handles the underlying infrastructure. Internally, the engine runs on EC2- like compute 
-instances and stores data on SSD-backed storage, but those details are abstracted away - you only see the database endpoint.
+    The Amazon Neptune Engine is the fully managed graph database software layer provided by AWS. It is software the executes queries, manages graph data,
+and enforces transactions. we interact with it through Gremlin or SPARQL queries, while AWS handles the underlying infrastructure. Internally, the engine
+runs on EC2- like compute instances and stores data on SSD-backed storage, but those details are abstracted away - you only see the database endpoint.
 
 
 
