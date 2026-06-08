@@ -1,10 +1,10 @@
-"""
+'''
 
-Comparison: LangChain Agent vs Chains (LLMChain, SequentialChain) vs chatDatabricks()
+Comparison: LangChain Agent vs Chains (LLMChain, SequentialChain) vs ChatDatabricks()
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-| Feature                    | LangChain Agent (initialize_agent)                          | Chains (LLMChain, SequentialChain)                          | chatDatabricks()                                |
+| Feature                    | LangChain Agent (initialize_agent)                          | Chains (LLMChain, SequentialChain)                          | ChatDatabricks()                                |
 | -------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------- |
 
 | Core Idea                  | Autonomous agent that dynamically decides how to solve tasks | Predefined pipelines of prompts and models                  | Direct LLM call hosted on Databricks            |
@@ -21,12 +21,12 @@ Comparison: LangChain Agent vs Chains (LLMChain, SequentialChain) vs chatDatabri
 
 | Best For                   | Complex workflows, automation, research assistants          | Simple Q&A, structured multi-step tasks                     | Quick chat/Q&A integrated with Databricks       |
 
-| Invocation                 | agent.run("task") -> agent decides workflow                 | llm_chain.run("input") or seq_chain.run("input") -> fixed flow | chatDatabricks().run("prompt") -> direct output |
+| Invocation                 | agent.invoke({"input": "task"}) -> agent decides workflow   | llm_chain.invoke({"input": "task"}) or seq_chain.invoke({"input": "task"}) -> fixed flow | ChatDatabricks().invoke({"input": "task"}) -> direct output |
 
 
 
 
 
-Main difference is Tool Use is possible in LangChain Agent but not in Chains (LLMChain, SequentialChain) and chatDatabricks().
+Main difference is Tool Use is possible in LangChain Agent but not in Chains (LLMChain, SequentialChain) and ChatDatabricks().
 
-"""
+'''

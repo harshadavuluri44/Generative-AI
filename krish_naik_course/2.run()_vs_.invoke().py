@@ -1,26 +1,21 @@
 '''
 
 .run() vs .invoke()
-
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 
 .run() takes input as string only
 
-
 .invoke() takes Dictionary/ Structured input
-
 
 
 
 Use .run() when we just want a quick answer from an agent or chain.
 
 Use .invoke() when we need structured inputs/outputs, metadata or want to integrate multiple components in a workflow.
-
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
 NOTE - .run() is used in langchain old versions and deprecated now, use .invoke() instead.
+
 '''
 
 

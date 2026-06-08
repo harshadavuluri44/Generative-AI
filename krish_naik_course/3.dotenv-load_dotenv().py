@@ -13,7 +13,7 @@ os.getenv() or os.environ[...].
 Setup
 
 
-1. Install the package (or add it to requirements.txt):
+1. Install the package (add it to requirements.txt):
 
        pip install python-dotenv
 
