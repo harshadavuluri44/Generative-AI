@@ -156,4 +156,12 @@ Big-picture idea
     uv lock                     # re-resolve and regenerate uv.lock
     uv run <file.py>            # run a script inside the project's .venv
 
+
+------
+
+
+Homebrew is a package manager for macos, similar to pip.
+
+brew install openjdk@11
+
 """
