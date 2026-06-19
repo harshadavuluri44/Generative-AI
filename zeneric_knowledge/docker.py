@@ -16,7 +16,17 @@ run consistently across different environments.
 
 * with the help of single image, we can create multiple containers.
 
+----------
 
+
+Dockerfile contains the logic of installing requirements, copying the backend code, what hosts can hit this backend code.
+
+
+
+docker build packs the whole backend code, installs requirements and freezes everything into an image.
+
+
+docker run creates a container which starts the server (providing RAM, CPU etc)
 
 
 '''
