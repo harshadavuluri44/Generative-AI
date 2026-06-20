@@ -7,5 +7,10 @@ MLflow is an open-source platform for managing the end-to-end machine learning l
 * mlflow.set_experiment(path)
     This tells ML flow where to log training runs (metrics, parameters, artifacts)
 
+* mlflow.trace()
+    This is used to trace the end to end flow of the model.
+
+    For example from a user prompt to getting back response of MCP service.
+
 
 '''
