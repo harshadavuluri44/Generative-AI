@@ -34,7 +34,28 @@ from services.mcp_agent import MCPAgent as _MCPAgent
 # we need to create a new instance and then use the attributes/methods of it.
 
 agent = _MCPAgent()
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Field() is a Pydantic function used to add extra metadata/validation rules to a variable, beyond juts its type annotation(ex: str).
+
+It lets us specify things like:
+
+    - default value
+    - documentation metadata (description, etc.)
+
+Without Field(), we'd just write query:str, but then we have no way to attach description, etc.
+
+Example:  query: str = Field(..., description="User query to process with MCP agent")
+
+if default value is ...(Ellipsis), this field has no default - it is mandatory.
+
+if it is not mandatory - we can write default=None.
 
 
 
+session_id: Optional[str] = Field()
+
+
+here Optional[str] means session_id should be a string or None(optional).
 '''
