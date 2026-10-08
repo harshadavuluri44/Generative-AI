@@ -1,5 +1,5 @@
 '''
 
-502     - Bad Gatewar (Server Side Error)
+502     - Bad Gateway (Internal Server Side Error)
 
 '''
