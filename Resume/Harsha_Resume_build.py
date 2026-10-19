@@ -83,7 +83,7 @@ story.append(Paragraph(
 
 section("PROFESSIONAL SUMMARY")
 story.append(Paragraph(
-    "Results-driven <b>NITian</b> and <b>AI &amp; Data Engineer</b> with 3 years of experience building production "
+    "Results-driven <b>NITian</b> and <b>AI &amp; Data Engineer</b> with 3+ years of experience building production "
     "Generative AI applications and scalable data platforms. Specializes in agentic AI (MCP, LLM tool-calling, RAG "
     "with vector search), LLMOps with MLflow, and FastAPI services on Databricks, with a strong foundation in Spark, "
     "AWS, data lakes, and ETL pipelines. Architected and launched an enterprise conversational AI assistant that "
@@ -159,7 +159,7 @@ bullets([
 section("CERTIFICATIONS")
 bullets([
     "Databricks Certified AI Engineer Associate \u2013 Databricks (Issued 2026)",
-    "Databricks Certified Data Engineer Associate \u2013 Databricks (Issued 2023)",
+    "Databricks Certified Data Engineer Associate \u2013 Databricks (Issued 2024)",
 ])
 
 section("EDUCATION")
