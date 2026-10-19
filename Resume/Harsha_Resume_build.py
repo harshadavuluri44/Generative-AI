@@ -27,7 +27,7 @@ NAVY = HexColor("#1A1A2E")
 SKILL = HexColor("#1F2937")
 RULE = Color(0.122, 0.306, 0.475)
 
-OUT = sys.argv[1] if len(sys.argv) > 1 else "resume.pdf"
+OUT = sys.argv[1] if len(sys.argv) > 1 else "Harsha_Resume_9390003039.pdf"
 SCALE = float(sys.argv[2]) if len(sys.argv) > 2 else 1.0
 
 BODY = 10 * SCALE
@@ -95,20 +95,18 @@ story.append(Paragraph(
 section("TECHNICAL SKILLS")
 skills = [
     ("Generative AI &amp; Agents",
-     "Agentic AI, RAG, MCP (FastMCP), Agent-to-Agent, LangChain, LangGraph, ChatDatabricks, Prompt Engineering, Guardrails, "
-     "Embeddings, Hybrid Search (pgvector HNSW, RRF)."),
+     "Agentic AI, Multi-agent Systems (Agent-to-Agent), RAG, MCP (FastMCP), LangChain, LangGraph, ChatDatabricks, "
+     "LLMs (Claude, Llama), Prompt Engineering, Guardrails, Embeddings, Hybrid Search (pgvector HNSW, RRF)."),
     ("LLMOps &amp; AI Platforms",
-     "MLflow 3 Tracing &amp; LLM Judges, Databricks Model Serving, AI Gateway, Vector Search, Databricks Apps, "
-     "AI Index."),
+     "MLflow 3 (Tracing, LLM Judges), Model Serving, AI Gateway (Routing, Fallbacks), Databricks Apps."),
     ("Cloud &amp; Platforms",
-     "Databricks (Unity Catalog, Lakebase, Delta Lake, SQL Warehouses, Workflows), AWS (S3, Lambda, EKS)."),
+     "Databricks (Unity Catalog, Lakebase, Delta Lake, SQL Warehouses), AWS (S3, Lambda, EKS/Kubernetes)."),
     ("Data Engineering",
-     "Apache Spark, PySpark, Spark SQL, Delta Lake (CDF, MERGE), Brickflow, Koheesio, SparkExpectations, DBT, "
-     "Informatica CDGC, PostgreSQL."),
+     "Apache Spark, PySpark, Spark SQL, Delta Lake, Brickflow, SparkExpectations, DBT, Informatica CDGC."),
     ("Data Modeling",
      "Dimensional Modeling, Star/Snowflake Schema, SCD Type 1/2, Medallion, Lakehouse, Data Governance."),
     ("Programming &amp; DevOps",
-     "Python, SQL, FastAPI, Pydantic, Git, Docker, Jenkins CI/CD, OAuth 2.0 (Okta, M2M), Cerberus, pytest."),
+     "Python, SQL, FastAPI Microservices, Git, Docker, Jenkins CI/CD, OAuth 2.0 (Okta, M2M), pytest."),
 ]
 for label, value in skills:
     story.append(Paragraph(f"<b>{label}:</b> {value}", skill_style))
@@ -117,17 +115,19 @@ section("PROFESSIONAL EXPERIENCE")
 role("Nike", "Software Engineer II \u2013 AI", "Bengaluru, India | Jan 2026 \u2013 Present",
      project="Compass AI \u2013 Agentic chatbot for Nike\u2019s enterprise data catalog")
 bullets([
-    "Built and extended an <b>MCP (Model Context Protocol)</b> server for a <b>LangChain AI agent</b> on Databricks "
-    "Apps to <b>12 LLM-callable tools</b>, incl. an <b>agent-to-agent</b> tool calling Nike\u2019s AirTalk chatbot on "
-    "the user\u2019s behalf via <b>Okta OAuth</b>, and tools for AI-proposed data products, docs lookup, and catalog stats.",
+    "Built and extended an <b>MCP (Model Context Protocol)</b> server on Databricks Apps for a <b>LangChain AI agent</b> "
+    "powered by <b>Claude Sonnet 4.5 (Anthropic)</b>, scaling to <b>12 LLM-callable tools</b>, incl. a <b>multi-agent</b> "
+    "(agent-to-agent) tool calling Nike\u2019s AirTalk chatbot on the user\u2019s behalf via <b>Okta OAuth</b>, and tools "
+    "for AI-proposed data products, docs lookup, and catalog stats.",
     "Engineered retrieval tools over <b>Lakebase (Postgres)</b> with <b>hybrid semantic search</b> (pgvector + "
     "full-text via <b>Reciprocal Rank Fusion</b>) and safe SQL access; replaced an external REST API with direct "
     "table queries, removing a network hop and its auth.",
     "Implemented end-to-end <b>MLflow 3 tracing</b>, propagating request/session IDs from FastAPI to the MCP server "
-    "via HTTP headers so every LLM and tool call in a multi-turn chat forms one traced session for production debugging.",
-    "Established <b>LLM evaluation and monitoring</b> with MLflow 3 <b>LLM-as-a-judge</b> scorers (completeness, "
-    "role adherence, tool-call efficiency, user frustration) on production sessions, streaming latency metrics "
-    "(time-to-first-token), and <b>prompt caching</b> to cut token cost and latency.",
+    "via HTTP headers to group each multi-turn chat into one session, scored by <b>LLM-as-a-judge</b> evaluators "
+    "(completeness, role adherence, tool-call efficiency, user frustration) with time-to-first-token monitoring.",
+    "Configured <b>Databricks AI Gateway</b> with weighted <b>traffic splitting</b> (70% Claude Sonnet 4.6, 30% Claude "
+    "Opus 5.5) and session-sticky routing, plus an automatic <b>fallback</b> to Llama 3.3 70B for high availability; "
+    "added Anthropic <b>prompt caching</b> to cut token cost and latency.",
     "Engineered the agent\u2019s <b>system prompt and guardrails</b>: scope restriction to Nike metadata, "
     "non-disclosure of internals, correct bot identity, and accurate deep links to products, assets, and metrics.",
     "Productionized the MCP server across <b>dev/QA/prod</b> with <b>Jenkins CI/CD</b>, per-env config, "
