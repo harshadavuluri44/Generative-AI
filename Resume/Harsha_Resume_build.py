@@ -86,7 +86,7 @@ story.append(Paragraph(
     "Results-driven <b>NITian</b> and <b>AI &amp; Data Engineer</b> with 3 years of experience building production "
     "Generative AI applications and scalable data platforms. Specializes in agentic AI (MCP, LLM tool-calling, RAG "
     "with vector search), LLMOps with MLflow, and FastAPI services on Databricks, with a strong foundation in Spark, "
-    "AWS, data lakes, and ETL pipelines. Architected and delivered an enterprise conversational AI assistant that "
+    "AWS, data lakes, and ETL pipelines. Architected and launched an enterprise conversational AI assistant that "
     "enables natural-language data discovery across data assets, products, and domains. Proven track record of "
     "leading cross-functional teams and driving AI-led innovation with data governance at enterprise scale.",
     body_style,
@@ -115,44 +115,44 @@ section("PROFESSIONAL EXPERIENCE")
 role("Nike", "Software Engineer II \u2013 AI", "Bengaluru, India | Jan 2026 \u2013 Present",
      project="Compass AI \u2013 Agentic chatbot for Nike\u2019s enterprise data catalog")
 bullets([
-    "Built and extended an <b>MCP (Model Context Protocol)</b> server on Databricks Apps for a <b>LangChain AI agent</b> "
-    "powered by <b>Claude Sonnet 4.5 (Anthropic)</b>, scaling to <b>12 LLM-callable tools</b>, incl. a <b>multi-agent</b> "
+    "Developed and extended an <b>MCP (Model Context Protocol)</b> server on Databricks Apps for a <b>LangChain AI agent</b> "
+    "powered by <b>Claude Sonnet 4.5 (Anthropic)</b>, growing it to <b>12 LLM-callable tools</b>, incl. a <b>multi-agent</b> "
     "(agent-to-agent) tool calling Nike\u2019s AirTalk chatbot on the user\u2019s behalf via <b>Okta OAuth</b>, and tools "
     "for AI-proposed data products, docs lookup, and catalog stats.",
-    "Engineered retrieval tools over <b>Lakebase (Postgres)</b> with <b>hybrid semantic search</b> (pgvector + "
+    "Created retrieval tools over <b>Lakebase (Postgres)</b> with <b>hybrid semantic search</b> (pgvector + "
     "full-text via <b>Reciprocal Rank Fusion</b>) and safe SQL access; replaced an external REST API with direct "
     "table queries, removing a network hop and its auth.",
-    "Implemented end-to-end <b>MLflow 3 tracing</b>, propagating request/session IDs from FastAPI to the MCP server "
+    "Instrumented end-to-end <b>MLflow 3 tracing</b>, propagating request/session IDs from FastAPI to the MCP server "
     "via HTTP headers to group each multi-turn chat into one session, scored by <b>LLM-as-a-judge</b> evaluators "
     "(completeness, role adherence, tool-call efficiency, user frustration) with time-to-first-token monitoring.",
     "Configured <b>Databricks AI Gateway</b> with weighted <b>traffic splitting</b> (70% Claude Sonnet 4.6, 30% Claude "
     "Opus 5.5) and session-sticky routing, plus an automatic <b>fallback</b> to Llama 3.3 70B for high availability; "
     "added Anthropic <b>prompt caching</b> to cut token cost and latency.",
-    "Engineered the agent\u2019s <b>system prompt and guardrails</b>: scope restriction to Nike metadata, "
+    "Crafted the agent\u2019s <b>system prompt and guardrails</b>: scope restriction to Nike metadata, "
     "non-disclosure of internals, correct bot identity, and accurate deep links to products, assets, and metrics.",
     "Productionized the MCP server across <b>dev/QA/prod</b> with <b>Jenkins CI/CD</b>, per-env config, "
-    "<b>service-principal OAuth M2M</b>, and Cerberus secrets; retired a legacy MCP server and automated "
-    "access-scope and vector index refresh.",
-    "Built <b>FastAPI</b> chatbot features: chat-history APIs (sessions, timestamped recent queries, per-session "
+    "<b>service-principal OAuth M2M</b>, and Cerberus secrets; retired a legacy MCP server and scheduled "
+    "access-scope and vector index refresh jobs.",
+    "Shipped <b>FastAPI</b> chatbot features: chat-history APIs (sessions, timestamped recent queries, per-session "
     "limits), a live health endpoint for UI \u201cOnline\u201d status, and resilient ServiceNow ticketing, at a "
     "<b>90% test coverage</b> gate.",
-    "Delivered medallion <b>ETL pipelines</b> (Spark, Brickflow) and a gold-layer <b>dimensional model</b> "
+    "Built medallion <b>ETL pipelines</b> (Spark, Brickflow) and a gold-layer <b>dimensional model</b> "
     "(22 dims, 5 facts) with SparkExpectations DQ rules, grounding the agent across <b>100,000+</b> data assets.",
 ])
 
 role("Epsilon (Publicis Groupe)", "Data Engineer", "Bengaluru, India | Aug 2023 \u2013 Dec 2025")
 bullets([
-    "Designed and implemented comprehensive Data Quality framework for Prospect project, incorporating automated "
-    "discrepancy detection and real time alerting mechanisms to ensure data integrity and compliance.",
+    "Designed a comprehensive Data Quality framework for the Prospect project, featuring automated discrepancy "
+    "detection and real-time alerting mechanisms to ensure data integrity and compliance.",
     "Constructed scalable ETL/ELT data solutions processing over 150+ billion records daily into data lakes and "
-    "warehouses using Spark, developed ML Models enhancing decision-making and resulting in 25% boost in quarterly revenue.",
-    "Optimized and tuned Spark jobs for large-scale datasets (30+ TB), implementing performance best practices and "
+    "warehouses using Spark, and trained ML models that enhanced decision-making, driving a 25% boost in quarterly revenue.",
+    "Optimized and tuned Spark jobs for large-scale datasets (30+ TB), applying performance best practices and "
     "reducing infrastructure costs by 46%.",
-    "Collaborated with cross-functional teams to establish data governance standards and implement CI/CD pipelines "
-    "for automated data processing workflows.",
-    "Built end-to-end data pipelines encompassing Ingestion, extract-transform-load processes, data archiving, "
-    "warehousing and reporting automation using Apache Spark on Databricks Delta tables.",
-    "Collaborated with solution architects and business stakeholders to design and implement complex ML models for "
+    "Partnered with cross-functional teams to define data governance standards and set up CI/CD pipelines for "
+    "data workflows.",
+    "Owned end-to-end data pipelines spanning ingestion, extract-transform-load processes, data archiving, "
+    "warehousing and recurring reporting using Apache Spark on Databricks Delta tables.",
+    "Worked closely with solution architects and business stakeholders to design and deploy complex ML models for "
     "predictive analytics and BI solutions.",
 ])
 
