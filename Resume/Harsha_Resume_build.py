@@ -158,7 +158,7 @@ bullets([
 
 section("CERTIFICATIONS")
 bullets([
-    "Databricks Certified AI Engineer Associate \u2013 Databricks (Issued 2026)",
+    "Databricks Certified Generative AI Engineer Associate \u2013 Databricks (Issued 2026)",
     "Databricks Certified Data Engineer Associate \u2013 Databricks (Issued 2024)",
 ])
 
