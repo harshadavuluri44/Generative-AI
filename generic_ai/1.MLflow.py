@@ -31,5 +31,16 @@ The values can be
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+Callback Handler in LangChain:
+
+        A class that has methods like on_chat_model_start, on_llm_end, on_tool_start.
+
+        These methods are available in BaseCallbackHandler class.
+
+Callbacks: The above methods are called Callbacks. They are hooks that LangChain calls when something happens. We never call them ourself.
+
+Callback manager: Internal LangChain machinery. It holds a list of handlers. When a component starts or ends, the manager loops over its handlers and calls the matching methods on each.
+
+
 
 '''
