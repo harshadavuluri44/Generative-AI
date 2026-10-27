@@ -109,7 +109,7 @@ skills = [
     ("Data Modeling",
      "Dimensional Modeling, Star/Snowflake Schema, SCD Type 1/2, Medallion, Lakehouse, Data Governance."),
     ("Programming &amp; DevOps",
-     "Python, SQL, FastAPI Microservices, Git, Docker, Jenkins CI/CD, OAuth 2.0 (Okta, M2M)."),
+     "Python, SQL, FastAPI Microservices, Pydantic, Git, Docker, Jenkins CI/CD, OAuth 2.0 (Okta, M2M)."),
 ]
 for label, value in skills:
     story.append(Paragraph(f"<b>{label}:</b> {value}", skill_style))
