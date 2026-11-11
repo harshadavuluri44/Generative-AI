@@ -95,4 +95,16 @@ KEY TAKEAWAYS:
 3. Storage is chosen by us. The harness automates storing and pointing to it. The model chooses when to read it back.
 
 
+Context Engineering Techniques:
+
+1. Offloading: large tool results and user messages are saved to the filesystem, and the model sees a preview.
+2. Summarization: When the conversation nears the context limit/threshold (we can check through middleware), older messages are condensed into a summary.
+3. Skills
+4. Subagents: noisy work runs in a separate context window, and only the result comes back.
+5. Long-term memory: what the agent learns is saved to a file that carries over to the next conversation.
+
+
+
+https://www.langchain.com/blog/context-engineering-deep-agents-remember
+
 '''
