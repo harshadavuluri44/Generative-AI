@@ -27,7 +27,7 @@ NAVY = HexColor("#1A1A2E")
 SKILL = HexColor("#1F2937")
 RULE = Color(0.122, 0.306, 0.475)
 
-OUT = sys.argv[1] if len(sys.argv) > 1 else "Harsha_Resume_9390003039.pdf"
+OUT = sys.argv[1] if len(sys.argv) > 1 else "Harsha_Resume_AI_Engineer.pdf"
 SCALE = float(sys.argv[2]) if len(sys.argv) > 2 else 1.0
 
 BODY = 10 * SCALE
