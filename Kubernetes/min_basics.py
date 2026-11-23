@@ -63,5 +63,72 @@ NOTE: Almost all servers, including EC2 machines, EKS machines and containers, u
 Our code runs on a Mac while we develop (macOS is the OS). When it's deployed, it runs on Linux, because that's what servers use.
 Linux is free and stable, and we can control it entirely from the command line without a screen.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Container: A running image: A Linux process
+
+Linux process: simply means a running program that linux kernel is tracking
+
+k8: Orchestrator that decides which machines run which containers, and keeps them healthy
+
+
+K8 tells the machines Linux to run the image as container, which is just a Linux process.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+UVICORN and LINXU both has software code in GitHub
+
+
+
+EKS node (a machine)
+    Linux
+        Container
+            Uvicorn process
+                FastAPI code
+
+
+Linux is OS, It manages machine's hardware and starts and tracks every process (running app).
+
+Uvicorn is one progra, that runs on top of Linux, it's a web server for Python apps.
+
+
+
+Uvicorn listens requests and pass to App
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+IP address: A machine's address on network. Every pod get's an IP address
+
+------
+
+
+RUN executes at image build time. (docker build)
+
+CMD executes when a container starts. (docker run/ when K8s starts the pod)
+
+
+---
+
+
+K8 deployment yaml contains docker image location or name.
+
+
+
+STEP BY STEP
+
+
+1. git push
+2. trigger jenkins
+3. docker build
+4. docker push
+
+
+5. create pods (replicas in YAML)
+6. pull image
+7. starts container.
 
 '''
